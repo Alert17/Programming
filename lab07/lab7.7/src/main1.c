@@ -5,11 +5,11 @@ int var_func (int numbers, ... );
 
 int main()
 {
-     	int result = var func(SIZE, 2, 7, 4, 9, 1);
+     	int result = var_func(SIZE, 2, 7, 4, 9, 1);
      	return 0;
 }
 
-int function (int numbers, ... ) {
+int var_func (int numbers, ... ) {
  	int result = 0;
 	va_list reas;
 	va_start(reas, numbers);
@@ -21,6 +21,6 @@ int function (int numbers, ... ) {
   		}
   		pos1 = pos2;
  	}
- 	va_end(reas;
+ 	va_end(reas);
      	return result;
 }
