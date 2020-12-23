@@ -18,19 +18,19 @@
 #include <stdarg.h>
 #define SIZE 5
 
-int var_func (int numbers, ... );
+int found_couple (int numbers, ... );
 
 /**
  * Головна функція.
  *
  * Послідовність дій:
- * - Задання значення результату через функцію var_func.
+ * - Задання значення результату через функцію found_couple.
  * @return успішний код повернення з програми (0)
  */
 
 int main()
 {
-     	int result = var_func(SIZE, 2, 7, 4, 9, 1);
+     	int result =found_couple(SIZE, 2, 7, 4, 9, 1);
      	return 0;
 }
 
@@ -40,18 +40,18 @@ int main()
  * Функція задає параметрам pos1 та pos2 значення чисел поступово пересуваючись по заданим та перевіряє їх.
  * Якщо числа дорівнюють додаємо до результат одиницю.
  */
-int var_func (int numbers, ... ) {
+int found_couple (int numbers, ... ) {
  	int result = 0;
-	va_list reas;
-	va_start(reas, numbers);
- 	int pos1 = va_arg(reas, int);
+	va_list param;
+	va_start(param, numbers);
+ 	int pos1 = va_arg(param, int);
  	for (int i = 0; i < SIZE; i++){
-  		int pos2 = va_arg(reas, int);
+  		int pos2 = va_arg(param, int);
   		if (pos1 < pos2) {
       			result += 1;
   		}
   		pos1 = pos2;
  	}
- 	va_end(reas);
+ 	va_end(param);
      	return result;
 }

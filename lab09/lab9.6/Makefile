@@ -28,7 +28,7 @@ main5.bin: src/main5.c
 main6.bin: src/main6.c
 	$(CC) $(C_OPTS) $< -o ./dist/$@
 					
-run: clean prep compile
+run: clean prep compile doxygen
 	./dist/main3.bin
 doxygen:
 	doxygen Doxyfile

@@ -21,7 +21,7 @@
 
 int maximum(int a, int b);
 
-int cycle(int a, int b, int max);
+int found_multiple(int a, int b, int max);
 
 /**
  * Головна функція.
@@ -41,7 +41,7 @@ int main(){
 	int result;
 	int max;
 	max = maximum(first, second);
-	result = cycle(first, second, max);
+	result = found_multiple(first, second, max);
 return 0;
 }
 
@@ -65,7 +65,7 @@ int maximum(int a, int b) {
  *
  * Функція через цикл перевіряє подільність кожного числа починаючи з максимального до нуля.
  */
-int cycle(int a, int b, int max) {
+int found_multiple(int a, int b, int max) {
 	int res;
   	for(int i = max; i != 0; i--){
                 if (a % i == 0 && b % i == 0){

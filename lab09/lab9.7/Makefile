@@ -2,7 +2,7 @@ targets = main1.bin
 CC = gcc
 C_OPTS = -std=gnu11 -g -Wall -Wextra -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wnull-dereference
 
-all: clean prep compile
+all: clean prep compile doxygen
 
 clean:
 	rm -rf dist
