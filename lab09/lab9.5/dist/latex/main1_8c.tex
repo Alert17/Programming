@@ -1,0 +1,77 @@
+\hypertarget{main1_8c}{}\doxysection{Файл src/main1.c}
+\label{main1_8c}\index{src/main1.c@{src/main1.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Діаграма включених заголовочних файлів для main1.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{main1_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функції}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main1_8c_a8e68b1dd21b69dda6f6603362ae2dfae}{maximum}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Визначення максимального числа. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main1_8c_a17d8e00339251761c12771f7f9547f3c}{found\+\_\+multiple}} (int a, int b, int max)
+\begin{DoxyCompactList}\small\item\em Знаходження НСД. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Головна функція. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Опис функцій}
+\mbox{\Hypertarget{main1_8c_a17d8e00339251761c12771f7f9547f3c}\label{main1_8c_a17d8e00339251761c12771f7f9547f3c}} 
+\index{main1.c@{main1.c}!found\_multiple@{found\_multiple}}
+\index{found\_multiple@{found\_multiple}!main1.c@{main1.c}}
+\doxysubsubsection{\texorpdfstring{found\_multiple()}{found\_multiple()}}
+{\footnotesize\ttfamily int found\+\_\+multiple (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Знаходження НСД. 
+
+Функція через цикл перевіряє подільність кожного числа починаючи з максимального до нуля. \mbox{\Hypertarget{main1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main1.c@{main1.c}!main@{main}}
+\index{main@{main}!main1.c@{main1.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Головна функція. 
+
+Послідовність дій\+:
+\begin{DoxyItemize}
+\item Оголошення змінних.
+\item Задання значення max через функцію maximum
+\item Знаходження результату через функцію cycle 
+\begin{DoxyParams}{Аргументи}
+{\em first,second} & -\/ задані числа \\
+\hline
+{\em result,max} & -\/ змінні, які будемо використовувати \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Повертає}
+успішний код повернення з програми (0) 
+\end{DoxyReturn}
+
+\end{DoxyItemize}Граф всіх викликів цієї функції\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{main1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main1_8c_a8e68b1dd21b69dda6f6603362ae2dfae}\label{main1_8c_a8e68b1dd21b69dda6f6603362ae2dfae}} 
+\index{main1.c@{main1.c}!maximum@{maximum}}
+\index{maximum@{maximum}!main1.c@{main1.c}}
+\doxysubsubsection{\texorpdfstring{maximum()}{maximum()}}
+{\footnotesize\ttfamily int maximum (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Визначення максимального числа. 
+
+Функція порівнює два числа, та повертає найбільше. 

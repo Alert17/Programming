@@ -19,6 +19,7 @@
 
 #include <stdbool.h>
 
+int summary(number);
 /**
  * Головна функція.
  *
@@ -32,7 +33,7 @@
  * @return успішний код повернення з програми (0)
  */
 
-int summary(number);
+
 int main(){
   	int num = 5;
   	int sum = 0;
