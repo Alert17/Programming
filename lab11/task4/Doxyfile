@@ -1,6 +1,6 @@
 ## Common Project info
-PROJECT_NAME = "Лабораторна робота 13"
-PROJECT_BRIEF = "Ознайомлення зі строками"
+PROJECT_NAME = "Лабораторна робота 11"
+PROJECT_BRIEF = "Ознайомлення з показчиками"
 PROJECT_NUMBER = 0.1
 
 ## output options
@@ -11,7 +11,7 @@ DOXYFILE_ENCODING = UTF-8
 ## input options
 INPUT_ENCODING = UTF-8
 RECURSIVE = YES
-FILE_PATTERNS = *.c
+FILE_PATTERNS = *.c *.h
 ###########
 #USE_MDFILE_AS_MAINPAGE = README.md
 ###########

@@ -1,5 +1,5 @@
+#include "lib.h"
 
-#define SIZE 4
 
 
 int main() {
